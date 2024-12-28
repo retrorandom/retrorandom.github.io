@@ -98,7 +98,7 @@
 
 /* Background Image */
 	body {
-		background-image: url("assets/images/background1.gif");
+		background-image: url("assets/images/background.png");
 		background-color: #000000;
 	}
 
@@ -107,11 +107,6 @@
     height: 1px;
 	background-color: #383838;
 	border: none;
-	}
-	
-/* iframe Border Remove */
-	iframe {
-		border: none;
 	}
 	
 /* 50% Left-Right Columns */
@@ -129,7 +124,7 @@
 
 
 
-/* new page will be here soon
+/* more shit will be here some day :(
 ---------------------------*/
 
 
