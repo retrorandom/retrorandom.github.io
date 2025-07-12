@@ -1,191 +1,192 @@
-	.fullscreen {
-	width:100%
-	text-align:center
-	}
+.fullscreen {
+	width:100%;
+	text-align:center;
+}
 
 /* Page Width */
-	.stage {
+.stage {
 	width:auto;
 	max-width:980px;
 	margin-left:auto;
 	margin-right:auto;
-	}
-	.top {
-		width: 100%;
-		height: 40px;
-		border:solid 1px white
-	}
-	.left {
-		width: 30%;
-		height: 100%;
-		float:left;
-	}
-	.main {
-		float: left;
-		height: 100%;
-		width: 70%;
-		border:  solid 1px black;
-	}
- 
+}
+.top {
+	width: 100%;
+	height: 40px;
+	border:solid 1px white;
+}
+.left {
+	width: 30%;
+	height: 100%;
+	float:left;
+}
+.main {
+	float: left;
+	height: 100%;
+	width: 70%;
+	border: solid 1px black;
+}
+
 /* Link Colors */
-	/* unvisited link */
-		a:link {
-			color: #4e9144;
-		}
-	/* visited link */
-		a:visited {
-			color: #4e9144;
-		}
-	/* mouse over link */
-		a:hover {
-			color: #4e9144;
-		}
-	/* selected link */
-		a:active {
-			color: #4e9144;
-		}
+/* unvisited link */
+a:link {
+	color: #4e9144;
+}
+/* visited link */
+a:visited {
+	color: #4e9144;
+}
+/* mouse over link */
+a:hover {
+	color: #4e9144;
+}
+/* selected link */
+a:active {
+	color: #4e9144;
+}
 
 /* Font Stuff */
-	@font-face {
-		font-family: "TW Cen MT";
-		src: url(twcenmt.ttf) format("truetype");
-	}
-	@font-face {
-		font-family: "c1";
-		src: url(c1.ttf) format("truetype");
-	}
-	
-/* Font Colors */	
-	p.twcenmt { 
-		font-family: "TW Cen MT";
-		color: #4e9144;
-	}
-	p.twcenmtred { 
-		font-family: "TW Cen MT";
-		color: #D00000;
-	}
-	p.twcenmtlightgray { 
-		font-family: "TW Cen MT";
-		color: #A4A4A4;
-	}
-	p.twcenmtredhighlight { 
-		font-family: "TW Cen MT";
-		color: #FFFFFF;
-		background-color: #D00000;
-		padding:4px;
-	}
-	p.twcenmtbluehighlight { 
-		font-family: "TW Cen MT";
-		color: #FFFFFF;
-		background-color: #0600C0;
-		padding:4px;
-	}
-	p.bold { 
-		font-weight: bold;
-	}
-	.c1 { 
-		font-family: "c1";
-		color: #FFDA20;
-		display: inline;
-	}
-	p {
-		display: block;
-		margin-top: 0em;
-		margin-bottom: 0em;
-		margin-left: 0;
-		margin-right: 0;
-	}
+@font-face {
+	font-family: "TW Cen MT";
+	src: url(twcenmt.ttf) format("truetype");
+}
+@font-face {
+	font-family: "c1";
+	src: url(c1.ttf) format("truetype");
+}
+
+/* Font Colors */
+p.twcenmt {
+	font-family: "TW Cen MT";
+	color: #4e9144;
+}
+p.twcenmtred {
+	font-family: "TW Cen MT";
+	color: #D00000;
+}
+p.twcenmtlightgray {
+	font-family: "TW Cen MT";
+	color: #A4A4A4;
+}
+p.twcenmtredhighlight {
+	font-family: "TW Cen MT";
+	color: #FFFFFF;
+	background-color: #D00000;
+	padding:4px;
+}
+p.twcenmtbluehighlight {
+	font-family: "TW Cen MT";
+	color: #FFFFFF;
+	background-color: #0600C0;
+	padding:4px;
+}
+p.bold {
+	font-weight: bold;
+}
+.c1 {
+	font-family: "c1";
+	color: #FFDA20;
+	display: inline;
+}
+p {
+	display: block;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: 0;
+	margin-right: 0;
+}
 
 /* Background Image */
-	body {
-		background-image: url("assets/images/mainbg.png");
-		background-color: #000000;
-	}
-
-/* CUBE */
-.cube-section {
-  display: block;
-  width: 100%;
-  margin: 60px 0;
-  padding: 30px 0;
-  position: relative;
-  z-index: 1;
-  min-height: 450px;
-}
-
-.cube-scene {
-  width: 300px;
-  height: 300px;
-  margin: 30px auto;
-  perspective: 1000px;
-  position: relative;
-  top: 30px;
-}
-
-.cube {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 20s infinite linear;
-  transform-origin: center;
-}
-
-.cube-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "TW Cen MT";
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  box-sizing: border-box;
-  backface-visibility: visible;
-  background-color: #ffcccc;
-  opacity: 0.9;
-}
-
-/* Face positions */
-.front  { transform: rotateY(0deg) translateZ(150px); }
-.back   { transform: rotateY(180deg) translateZ(150px); }
-.right  { transform: rotateY(90deg) translateZ(150px); }
-.left   { transform: rotateY(-90deg) translateZ(150px); }
-.top    { transform: rotateX(90deg) translateZ(150px); }
-.bottom { transform: rotateX(-90deg) translateZ(150px); }
-
-/* speeeeeeeeen */
-@keyframes spin {
-  from { transform: rotateX(0deg) rotateY(0deg); }
-  to { transform: rotateX(360deg) rotateY(360deg); }
+body {
+	background-image: url("assets/images/mainbg.png");
+	background-color: #000000;
 }
 
 .website-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 24px;
-    text-decoration: none;
-    color: #0066cc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: 24px;
+	text-decoration: none;
+	color: #0066cc;
 }
 
 .website-link:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .favicon {
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
+}
+
+/* Rainbow Text */
+.rainbow-text {
+	background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	animation: rainbow 5s linear infinite;
+}
+@keyframes rainbow {
+	0% { filter: hue-rotate(0deg); }
+	100% { filter: hue-rotate(360deg); }
+}
+
+/* Retro Footer */
+.footer {
+	margin-top: 20px;
+	font-size: 10px;
+	text-align: center;
+}
+
+/* === Render Gallery Grid === */
+.render-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	justify-items: center;
+}
+
+.render-gallery img {
+	width: 100%;
+	max-width: 300px;
+	border: 4px double #4e9144;
+	background-color: #000;
+	padding: 5px;
+	box-shadow: 0 0 10px #4e9144;
+	transition: transform 0.2s ease;
+}
+
+.render-gallery img:hover {
+	transform: scale(1.05);
+	border-color: #4e9144;
+}
+/* === Lightbox Style === */
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	cursor: zoom-out;
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 90%;
+	border: 5px double #4e9144;
+	background-color: black;
+	padding: 10px;
+	box-shadow: 0 0 20px #4e9144;
 }
 
 /* more shit will be here some day :(
 ---------------------------*/
-
-
-
-
-

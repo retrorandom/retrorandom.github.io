@@ -1,0 +1,44 @@
+# IntelliJ/WebStorm project files
+.idea/
+*.iml
+out/
+*.iws
+
+# Node modules (if you ever add npm)
+node_modules/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output folders (if any)
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache files
+.cache/
+.vscode/
+
+# Environment variables (if any)
+.env
+
+# Ignore deployment config or sensitive files
+deploy/
+config/local.js
+
+# Ignore generated files (if any)
+assets/scripts/*.min.js
+
+# Ignore system files
+*.swp
+*.swo
+
+# Ignore coverage reports (if you use testing tools)
+coverage/
