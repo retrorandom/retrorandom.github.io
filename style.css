@@ -1,166 +1,96 @@
-	.fullscreen {
-	width:100%
-	text-align:center
-	}
+.fullscreen {
+    width:100%;
+    text-align:center
+}
 
 /* Page Width */
-	.stage {
-	width:auto;
-	max-width:980px;
-	margin-left:auto;
-	margin-right:auto;
-	}
-	.top {
-		width: 100%;
-		height: 40px;
-		border:solid 1px white
-	}
-	.left {
-		width: 30%;
-		height: 100%;
-		float:left;
-	}
-	.main {
-		float: left;
-		height: 100%;
-		width: 70%;
-		border:  solid 1px black;
-	}
- 
+.stage {
+    width:auto;
+    max-width:980px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.top {
+    width: 100%;
+    height: 40px;
+    border:solid 1px white
+}
+.left {
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+.main {
+    float: left;
+    height: 100%;
+    width: 70%;
+    border:  solid 1px black;
+}
+
 /* Link Colors */
-	/* unvisited link */
-		a:link {
-			color: #4e9144;
-		}
-	/* visited link */
-		a:visited {
-			color: #4e9144;
-		}
-	/* mouse over link */
-		a:hover {
-			color: #4e9144;
-		}
-	/* selected link */
-		a:active {
-			color: #4e9144;
-		}
+
+a:link {
+    color: #4e9144;
+}
+
+a:visited {
+    color: #4e9144;
+}
+
+a:hover {
+    color: #4e9144;
+}
+
+a:active {
+    color: #4e9144;
+}
 
 /* Font Stuff */
-	@font-face {
-		font-family: "TW Cen MT";
-		src: url(twcenmt.ttf) format("truetype");
-	}
-	@font-face {
-		font-family: "c1";
-		src: url(c1.ttf) format("truetype");
-	}
-	
-/* Font Colors */	
-	p.twcenmt { 
-		font-family: "TW Cen MT";
-		color: #4e9144;
-	}
-	p.twcenmtred { 
-		font-family: "TW Cen MT";
-		color: #D00000;
-	}
-	p.twcenmtlightgray { 
-		font-family: "TW Cen MT";
-		color: #A4A4A4;
-	}
-	p.twcenmtredhighlight { 
-		font-family: "TW Cen MT";
-		color: #FFFFFF;
-		background-color: #D00000;
-		padding:4px;
-	}
-	p.twcenmtbluehighlight { 
-		font-family: "TW Cen MT";
-		color: #FFFFFF;
-		background-color: #0600C0;
-		padding:4px;
-	}
-	p.bold { 
-		font-weight: bold;
-	}
-	.c1 { 
-		font-family: "c1";
-		color: #FFDA20;
-		display: inline;
-	}
-	p {
-		display: block;
-		margin-top: 0em;
-		margin-bottom: 0em;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-/* Background Image */
-	body {
-		background-image: url("assets/images/mainbg.png");
-		background-color: #000000;
-	}
-
-/* CUBE */
-.cube-section {
-  display: block;
-  width: 100%;
-  margin: 60px 0;
-  padding: 30px 0;
-  position: relative;
-  z-index: 1;
-  min-height: 450px;
+@font-face {
+    font-family: "TW Cen MT";
+    src: url(twcenmt.ttf) format("truetype");
 }
 
-.cube-scene {
-  width: 300px;
-  height: 300px;
-  margin: 30px auto;
-  perspective: 1000px;
-  position: relative;
-  top: 30px;
+/* Font Colors */
+p.twcenmt {
+    font-family: "TW Cen MT";
+    color: #4e9144;
+}
+p.twcenmtred {
+    font-family: "TW Cen MT";
+    color: #D00000;
+}
+p.twcenmtlightgray {
+    font-family: "TW Cen MT";
+    color: #A4A4A4;
+}
+p.twcenmtredhighlight {
+    font-family: "TW Cen MT";
+    color: #FFFFFF;
+    background-color: #D00000;
+    padding:4px;
+}
+p.twcenmtbluehighlight {
+    font-family: "TW Cen MT";
+    color: #FFFFFF;
+    background-color: #0600C0;
+    padding:4px;
+}
+p.bold {
+    font-weight: bold;
 }
 
-.cube {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 20s infinite linear;
-  transform-origin: center;
+p {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.cube-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "TW Cen MT";
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  box-sizing: border-box;
-  backface-visibility: visible;
-  background-color: #ffcccc;
-  opacity: 0.9;
-}
-
-/* Face positions */
-.front  { transform: rotateY(0deg) translateZ(150px); }
-.back   { transform: rotateY(180deg) translateZ(150px); }
-.right  { transform: rotateY(90deg) translateZ(150px); }
-.left   { transform: rotateY(-90deg) translateZ(150px); }
-.top    { transform: rotateX(90deg) translateZ(150px); }
-.bottom { transform: rotateX(-90deg) translateZ(150px); }
-
-/* speeeeeeeeen */
-@keyframes spin {
-  from { transform: rotateX(0deg) rotateY(0deg); }
-  to { transform: rotateX(360deg) rotateY(360deg); }
+body {
+    background-image: url("assets/images/mainbg.png");
+    background-color: #000000;
 }
 
 .website-link {
@@ -181,11 +111,190 @@
     width: 32px;
     height: 32px;
 }
+.copyright {
+    font-family: "TW Cen MT";
+    font-size: 14px;
+    text-align: center;
+    color: #4e9144;
+    text-shadow: 1px 1px 0 #2A2A2A;
+    margin-top: 32px;
+    padding-bottom: 16px;
+}
+
+/* MCO Links style */
+.mco-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+.mco-links li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-family: "TW Cen MT";
+    font-size: 18px;
+}
+
+.mco-links .link-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.mco-links a {
+    text-decoration: none;
+    color: #4e9144;
+    text-shadow: 2px 2px 0px #383838;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.mco-links li:hover .link-icon,
+.mco-links li:hover a {
+    transform: scale(1.05);
+}
+
+.mco-links a:hover {
+    text-decoration: underline;
+}
+
+/* Written books page style */
+.book-item {
+    margin-bottom: 15px;
+    border: 2px solid #4e9144;
+    background-color: transparent;
+}
+
+.book-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "TW Cen MT";
+    color: #4e9144;
+    text-shadow: 2px 2px 0px #383838;
+    transition: background-color 0.2s ease;
+}
+
+.book-header:hover {
+    background-color: rgba(78, 145, 68, 0.2);
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.book-author {
+    font-size: 16px;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.book-content {
+    padding: 0;
+    font-family: monospace;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.4;
+    max-height: 600px;
+    overflow-y: auto;
+    border-top: 1px solid #4e9144;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.minecraft-page {
+    background: linear-gradient(to bottom, #f5f0e8 0%, #e8dcc8 100%);
+    border: 3px solid #5c4433;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        3px 3px 8px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 192px;
+    height: 192px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.minecraft-page-content {
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000000;
+    padding: 14px 16px;
+    flex-grow: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.minecraft-page-number {
+    font-family: monospace;
+    font-size: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 4px;
+    border-top: 1px solid rgba(92, 68, 51, 0.2);
+}
+
+.loading {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Navigation */
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    font-family: "TW Cen MT";
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #4e9144;
+    text-shadow: 2px 2px 0px #383838;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
+.nav-item.active {
+    font-weight: bold;
+}
+
+.nav-icon {
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 4px;
+}
 
 /* more shit will be here some day :(
 ---------------------------*/
-
-
-
-
-

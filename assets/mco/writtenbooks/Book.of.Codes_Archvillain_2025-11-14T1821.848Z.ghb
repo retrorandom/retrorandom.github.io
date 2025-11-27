@@ -1,0 +1,156 @@
+//Book saved in GHB format at 2025-11-14T1821.997Z
+title:Book of Codes
+author:Archvillain
+//=======================================
+          Useful##
+    COMMAND CODES##
+     of FREEDONIA##
+##
+ Full List of Codes at##
+www.MinecraftOnline.com##
+##
+Page 2: The Basics##
+3: People & Info##
+4: Travel##
+5: Miscellaneous##
+6: Locking Chests##
+7: Extra Kits & Powers##
+8: Donor Abilities 9:etc§r##
+>>>>
+2nd Edition, July 2023##
+   by Archvillain##
+##
+=== THE BASICS ====##
+Avoiding a ban will be##
+hard unless you know##
+the rules. To teleport##
+to the rules-reading##
+area use this command##
+/rules##
+##
+To teleport back to##
+starting area use:##
+/spawn§r##
+>>>>
+=== PEOPLE & INFO ===##
+/help##
+/msg [user] [msg]##
+/r [msg]    reply2msg##
+/who    list players##
+/staff [msg]##
+/mail    to check mail##
+/nearestplayer##
+/friends##
+/friend /unfriend usr##
+/reputation##
+/goodrep /badrep usr##
+/timeplayed##
+/wholiveshere§r##
+>>>>
+===== TRAVEL =====##
+/map   link to map##
+/tour  world tour##
+/sethome  set home##
+/home  teleport2home##
+/getpos  coordinates##
+/follow  use a trail##
+/warplist##
+/warp [place]##
+/nearestwarp ##
+/nearestnexus##
+/st [station]  railway##
+/wilderness  find an##
+    unoccupied area§r##
+>>>>
+== MISCELLANEOUS ==##
+/register  [email]##
+ Confirm your email##
+ to use advanced ##
+ server features ##
+/greport [desciption]##
+ Report grief at the##
+ looked-at block##
+/render ##
+ Highres view. Gallery:##
+ imgur.com/a/yRcf5##
+/getmap [zoom 0-4]##
+ Fill an empty map##
+/goodnight§r##
+>>>>
+== LOCKING CHESTS ==##
+Registered users can ##
+protect two chests ##
+(more with kits) using##
+LightWeightChest:##
+/lwc##
+##
+To make a chest that##
+only you can open:##
+/lwc -create private##
+then leftclick on chest##
+##
+to undo:##
+/lwc -r container§r##
+>>>>
+=EXTRA KITS&POWERS=##
+Register & vote for##
+server to get tokens##
+that buy kits&powers##
+in the Store:##
+/register [your email]##
+/vote##
+/store##
+##
+Some kit powers:##
+/kit stonetools##
+/kit ironarmour##
+wood iron gold diamond##
+/thru /heal /tpto etc§r##
+>>>>
+=== Donor Abilities ===##
+L2: donor level II etc##
+/colourarmour##
+/posestand givearms##
+/posestand swaphands##
+/posestand cycle   L2##
+/posestand load   L3##
+/lockstand ##
+/hat   L2 L3##
+/hide   L2##
+/hug   L3##
+/firework   L1 L2##
+/flair   L2 ##
+/wave   L2      &more§r##
+>>>>
+==== CRAFTBOOK ====##
+Craftbook is a MCO##
+plugin to do special##
+redstone functions by##
+writing code on a ##
+wooden sign. Eg logic##
+gate or seed planter.##
+##
+On the sign, 2nd line ##
+of text sets function, ##
+3rd line is parameters.##
+##
+See wiki for examples.§r##
+>>>>
+         THE END##
+##
+I made this as notes##
+for me, but maybe ##
+others might find it ##
+useful too? Enjoy!##
+##
+ - Archvillain##
+##
+Visit me at##
+X:5324 Y:72 Z: -1337##
+##
+About 450m north of:##
+/warp jimmyville§r##
+>>>>
+To copy this book, put ##
+on craft table with a##
+blank book&quill.§r##
