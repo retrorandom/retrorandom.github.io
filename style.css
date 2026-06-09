@@ -1,8 +1,143 @@
+.fullscreen {
+    width:100%;
+    text-align:center
+}
+
+/* Page Width */
+.stage {
+    width:auto;
+    max-width:980px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.top {
+    width: 100%;
+    height: 40px;
+    border:solid 1px white
+}
+.left {
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+.main {
+    float: left;
+    height: 100%;
+    width: 70%;
+    border:  solid 1px black;
+}
+
+/* Link Colors */
+
+a:link {
+    color: #4e9144;
+}
+
+a:visited {
+    color: #4e9144;
+}
+
+a:hover {
+    color: #4e9144;
+}
+
+a:active {
+    color: #4e9144;
+}
+
+/* Font Stuff */
+@font-face {
+    font-family: "TW Cen MT";
+    src: url(twcenmt.ttf) format("truetype");
+}
+
+/* Font Sizes for titles :3 */
+.main-title {
+    font-size: 50px;
+    margin-bottom: 10px !important;
+}
+
+.sub-title {
+    font-size: 20px;
+    margin-bottom: 50px !important;
+}
+
+/* Font Colors */
+p.twcenmtlillyscolour {
+    font-family: "TW Cen MT";
+    color: #4e9144;
+}
+p.twcenmtred {
+    font-family: "TW Cen MT";
+    color: #D00000;
+}
+p.twcenmtlightgray {
+    font-family: "TW Cen MT";
+    color: #A4A4A4;
+}
+p.twcenmtwhite {
+    font-family: "TW Cen MT";
+    color: #FFFFFF;
+}
+
+p.twcenmtredhighlight {
+    font-family: "TW Cen MT";
+    color: #FFFFFF;
+    background-color: #D00000;
+    padding:4px;
+}
+p.twcenmtbluehighlight {
+    font-family: "TW Cen MT";
+    color: #FFFFFF;
+    background-color: #0600C0;
+    padding:4px;
+}
+p.bold {
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 body {
     background-image: url("assets/images/mainbg.jpg");
     background-color: #000000;
 }
 
-h1 {
-    color: white;
+.website-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #0066cc;
 }
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+.favicon {
+    width: 32px;
+    height: 32px;
+}
+.copyright {
+    font-family: "TW Cen MT";
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    /* color: #4e9144;*/
+    text-shadow: 1px 1px 0 #2A2A2A;
+    margin-top: 32px;
+    padding-bottom: 16px;
+}
+
+
+/* more shit will be here some day :(
+---------------------------*/
